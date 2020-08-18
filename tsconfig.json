@@ -12,7 +12,20 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+        },
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ]
     },
     "include": [
         "./src/**/*"

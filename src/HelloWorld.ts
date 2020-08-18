@@ -1,3 +1,5 @@
+import { saySomethingNice } from '@/common/helpers';
+
 export class HelloWorld {
   private msg: string;
 
@@ -7,6 +9,7 @@ export class HelloWorld {
 
   sayHello(): void {
     console.log(`Hello World, and ${this.msg}`);
+    saySomethingNice();
   }
 }
 
